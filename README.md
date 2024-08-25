@@ -27,7 +27,3 @@ Cette application Vue.js permet de visualiser les dates de fin de contrat des jo
 - Vue.js
 - Vite
 - Bootstrap 5
-
-## Contact
-
-Pour toute question, veuillez contacter notre équipe à [jobs@sports-decisions.com](mailto:jobs@sports-decisions.com).
