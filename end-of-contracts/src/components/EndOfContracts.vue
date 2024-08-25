@@ -316,14 +316,17 @@ html, body {
   position: absolute;
   top: 65%;
   transform: translateY(-50%);
+  margin: 0;
+  left: 0;
+  right: 0;
 }
 
 .end-contracts-header .fa-caret-left {
-  left: 4.5%;
+  left: 5%;
 }
 
 .option-validity-header .fa-caret-right {
-  right: 5.5%;
+  left: 92%; 
 }
 
 .status-text,
