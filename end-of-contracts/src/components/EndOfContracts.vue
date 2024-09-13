@@ -315,7 +315,7 @@ th.col-md-4.col-6 .sort-button {
 }
 
 .title-general {
-  font-size: 10px;
+  font-size: 11px;
   color: #619ec4;
 }
 </style>
