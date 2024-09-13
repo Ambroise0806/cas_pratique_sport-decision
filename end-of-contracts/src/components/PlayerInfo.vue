@@ -1,6 +1,6 @@
 <template>
   <div class="player-info-container">
-    <div v-for="player in sortedPlayers" :key="player.id" class="player-info">
+    <div class="player-info">
       <img src="@/assets/playerIcon.svg" alt="Player Icon" class="player-icon" />
       <div class="nickname-position-and-ellipsis">
         <div class="nickname-and-position">
@@ -12,29 +12,13 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   props: {
-    players: {
-      type: Array,
+    player: {
+      type: Object,
       required: true
-    }
-  },
-  computed: {
-    sortedPlayers() {
-      return [...this.players].sort((a, b) => {
-        const numberA = parseInt(a.nickname.match(/\d+/)?.[0]);
-        const numberB = parseInt(b.nickname.match(/\d+/)?.[0]);
-
-        if (numberA === 10) return 1;
-        if (numberB === 10) return -1;
-
-        if (!isNaN(numberA) && !isNaN(numberB)) {
-          return numberA - numberB;
-        }
-        
-        return a.nickname.localeCompare(b.nickname);
-      });
     }
   }
 };
